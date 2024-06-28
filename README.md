@@ -1,32 +1,29 @@
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
-[![Version](https://img.shields.io/npm/v/react-native-progress-circle.svg)](https://www.npmjs.com/package/react-native-progress-circle)
-[![npm](https://img.shields.io/npm/dt/react-native-progress-circle.svg)](https://www.npmjs.com/package/react-native-progress-circle)
-[![Twitter Follow](https://img.shields.io/twitter/follow/cmichelio.svg?style=social&label=Follow)](https://twitter.com/cmichelio)
 
-# React Native Progress Circle
+# Expo Progress Circle
 
-![React Native Progress Circles](/README/featured.png?raw=true "React Native Progress Circles")
+![Expo Progress Circles](/README/featured.png?raw=true "Expo Progress Circles")
 
 ## Features
 
 * Custom colors
 * Custom size and border radius
-* Light-weight: No other dependencies besides `react-native`
+* Light-weight: No other dependencies besides `expo`
 
 ## Installation
 
-`yarn add react-native-progress-circle`
+`yarn add expo-progress-circle@https://github.com/santiago-heilborn-itti/expo-progress-circle`
 
 or
 
-`npm install --save react-native-progress-circle`
+`npm install --save expo-progress-circle@https://github.com/santiago-heilborn-itti/expo-progress-circle`
 
 ## Usage
 
-```javascript
-import ProgressCircle from 'react-native-progress-circle'
+```typescript
+import ProgressCircle from 'expo-progress-circle';
 
-render() {
+const SampleComponent = () => {
     return (
         <ProgressCircle
             percent={30}
@@ -38,8 +35,8 @@ render() {
         >
             <Text style={{ fontSize: 18 }}>{'30%'}</Text>
         </ProgressCircle>
-    )
-}
+    );
+};
 ```
 
 ## Props
@@ -59,9 +56,9 @@ render() {
 
 [Christoph Michel](http://cmichel.io)
 
-## Implementation Details
+## Maintainer/Collaborator
 
-[React Native Progress Circle](http://cmichel.io/react-native-progress-circle)
+[Santiago "Hersy" Heilborn](https://hersy.org)
 
 ## License
 

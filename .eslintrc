@@ -1,6 +1,7 @@
 {
-  "parser": "babel-eslint",
-  "extends": "airbnb",
+  "parser": "@babel/eslint-parser",
+  "extends": ["expo", "airbnb"],
+  "plugins": ["jest"],
   "rules": {
     "semi": [
       2,

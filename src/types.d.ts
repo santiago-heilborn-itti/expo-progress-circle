@@ -1,6 +1,6 @@
-declare module "react-native-progress-circle" {
-  import * as React from "react";
-  import * as ReactNative from "react-native";
+declare module 'expo-progress-circle' {
+  import * as React from 'react';
+  import * as ReactNative from 'react-native';
 
   export interface PercentageCircleProps {
     color?: string;
@@ -14,10 +14,15 @@ declare module "react-native-progress-circle" {
     outerCircleStyle?: ReactNative.ViewStyle | Array<ReactNative.ViewStyle>;
   }
 
+  export interface HalfCircleProps {
+    rotateDegrees: number,
+    halfCircleStyles?: ReactNative.ViewStyle | ReactNative.ViewStyle[]
+  }
+
   export default class PercentageCircle extends React.Component<
     PercentageCircleProps,
     any
   > {
-    render(): JSX.Element;
+    render(): React.JSX.Element;
   }
 }
